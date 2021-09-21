@@ -130,11 +130,11 @@ body:after {
       font-size: 3rem; } }
 
 .site-footer {
-  padding: 4em 0;
+  padding: 3em 0 1em;
   background: #333333; }
   @media (min-width: 768px) {
     .site-footer {
-      padding: 4em 0; } }
+      padding: 3em 0 1em; } }
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer p {
@@ -240,7 +240,7 @@ body:after {
   margin-top: -150px; }
 
 .ul-check {
-  margin-bottom: 50px; }
+  margin-bottom: 0px; }
   .ul-check li {
     position: relative;
     padding-left: 35px;
@@ -292,7 +292,7 @@ body:after {
   .site-navbar .site-logo {
     position: relative;
     left: 0;
-    top: -5px; }
+  }
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
@@ -549,9 +549,13 @@ body:after {
     .sticky-wrapper .site-navbar .site-logo a {
       color: #fff; }
     .sticky-wrapper .site-navbar .site-menu > li > a {
-      color: white !important; font-weight: 700; }
-      .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
+      color: white !important; font-weight: 700;
+    }
+    .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
         color: white !important; font-weight: 700; }
+    .sticky-wrapper .site-navbar .site-menu > li > a.text-primary {
+      color: #3f8c91 !important; font-weight: 700;
+    }
   .sticky-wrapper.is-sticky .site-navbar {
     background: white;
     border-bottom: 1px solid transparent;
@@ -566,15 +570,25 @@ body:after {
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
         color: #3f8c91 !important; }
   .sticky-wrapper .shrink {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important; }
+    /* padding-top: 10px !important;
+    padding-bottom: 10px !important; */
+  }
 
 /* Blocks */
+#home-section {
+  background: rgba(41, 57, 58, 0.7);  background:linear-gradient(0deg, rgba(41, 57, 58, 0.7), rgba(41, 57, 58, 0.7)), url('../images/young-women-bar-singing-karaoke.webp');
+  background-size: cover;
+  background-position: center center;
+}
 .site-blocks-cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-position: center center; }
+  background-position: center center; 
+}
+.mt-11 {
+  margin-top: 7rem!important;
+}
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
